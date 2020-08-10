@@ -54,7 +54,7 @@ int main(int argc, char const *argv[])
                     mn = p[i].burst_time;
                     idx = i;
                 }
-                if (p[i].burst_time == mn) {
+                if (p[i].burst_time == mn) {  // second if condition for the case when 2 processes have min burst time, and arrival times are diff
                     p[i].arrival_time < p[idx].arrival_time;
                     mn = p[i].burst_time;
                     idx = i;
